@@ -32,8 +32,8 @@ header {
 }
 
 footer {
-    bottom: 0;
     position: absolute;
+    bottom: 0;
     width: 100%;
     text-align: center;
 }
@@ -140,7 +140,7 @@ footer {
     padding: 0;
     overflow: scroll;
     width: 100%;
-    height: 400px;
+    height: 750px;
 }
 
 #city {
@@ -168,7 +168,7 @@ footer {
 }
 
 .list {
-    padding-bottom: 5px;
+    padding-bottom: 50px;
 }
 
 .image {
@@ -190,13 +190,14 @@ footer {
 
 .portfolio-text {
     color: white;
-    font-size: 12px;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 .portfolio-section {
     clear: both;
     width: 960px;
-    height: 480px;
+    height: 916px;
     margin: 20px auto;
     background: #ffffff;
     border-style: solid;
@@ -205,7 +206,7 @@ footer {
 }
 
 .images {
-    width: 110px;
+    width: 320px;
 }
 
 .fields {
@@ -228,6 +229,13 @@ footer {
 
 
 @media screen and (max-width: 768px) {
+    .images {
+        width: 275px;
+    }
+
+    #bike, #food {
+        float: right;
+    }
 
 }
 
