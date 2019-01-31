@@ -7,7 +7,6 @@ body {
 }
 
 h1,h2 {
-    /*background: #4aaaa5;*/
     color: #4aaaa5;
     font-family: Georgia, Times, "Times New Roman", serif;
 }
@@ -16,23 +15,6 @@ nav {
     padding: 20px 0;
     margin: auto;
     position: relative;
-}
-
-#nav-bar {
-    right: 0;
-    position: absolute;
-}
-
-.nav-item {
-    display: inline;
-    padding: 0 20px;
-}
-
-#bio {
-    border-top-style: solid;
-    border-width: 1px;
-    border-color: #dddddd;
-    margin: 20px;
 }
 
 a:link, a:visited {
@@ -54,6 +36,23 @@ footer {
     position: absolute;
     width: 100%;
     text-align: center;
+}
+
+.nav-item {
+    display: inline;
+    padding: 0 20px;
+}
+
+#nav-bar {
+    right: 0;
+    position: absolute;
+}
+
+#bio {
+    border-top-style: solid;
+    border-width: 1px;
+    border-color: #dddddd;
+    margin: 20px;
 }
 
 #name {
@@ -211,4 +210,28 @@ footer {
 
 .fields {
     padding-bottom: 5px;
+}
+
+@media screen and (max-width: 980px) {
+    #content {
+        width: 90%;
+    }
+
+    #main-content {
+        width: 90%;
+    }
+
+    .portfolio-section {
+        width: 90%;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+}
+
+
+@media screen and (max-width: 640px) {
+
 }
