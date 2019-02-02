@@ -2,18 +2,18 @@
 <html lang="en-us">
     <head>
         <meta charset="UTF-8">
-        <title>Basic Portfolio</title>
+        <title>Portfolio</title>
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     </head>
 
     <body>
         <header>
-            <section id="content">
-                <div id="name">
-                    <h1 id="main-header">Kevin Tran</h1>
+            <section class="content">
+                <div class="name">
+                    <h1 class="main-header">Kevin Tran</h1>
                 </div>
                 <nav>
-                    <ul id="nav-bar">
+                    <ul class="nav-bar">
                         <li class="divider nav-item"><a href="index.html">About</a></li>
                         <li class="divider nav-item"><a href="portfolio.html">Portfolio</a></li> 
                         <li class="nav-item"><a href="contact.html">Contact</a></li>
@@ -22,57 +22,60 @@
             </section>
         </header>
             
-        <section class="portfolio-section">
-            <h2 id="about">Portfolio</h2>
-            <section id="bio">
-            <ul id="gallery">
-                <li class="list image" id="city">
-                    <div class="container">
-                        <img class="images" id="city-img" src="assets/images/city-640-480.jpg">
-                        <div class="overlay">
-                            <div class="portfolio-text">City Navigator</div>
-                        </div>
-                    </div>
-                </li>
-                <li class="list image" id="bike">
-                    <div class="container">
-                        <img class="images" src="assets/images/people-640-480.jpg">
-                        <div class="overlay">
-                            <div class="portfolio-text">Quad-Rider App</div>
-                        </div>
-                    </div>
-                </li>
-                <li class="list image" id="car">
-                    <div class="container">
-                        <img class="images" src="assets/images/transport-640-480.jpg">
-                        <div class="overlay">
-                            <div class="portfolio-text">Used Car Site</div>
-                        </div>
-                    </div>
-                </li>
-                <li class="list image" id="food">
-                    <div class="container">
-                        <img class="images" src="assets/images/food-640-480.jpg">
-                        <div class="overlay">
-                            <div class="portfolio-text">Kevin's Kitchen Site</div>
-                        </div>
-                    </div>
-                </li>
-                <li class="list image" id="business">
-                    <div class="container">
-                        <img class="images" src="assets/images/business-640-480.jpg">
-                        <div class="overlay">
-                            <div class="portfolio-text">Meeting Sync App</div>
-                        </div>
-                    </div>
-                </li>
-            </ul>
+        <section class="main-container">
+            <section class="portfolio-section">
+                <h2 class="about">Portfolio</h2>
+                <section class="wrap">
+                    <ul id="gallery">
+                        <li class="list image" id="city">
+                            <a class="container"  href="#">
+                                <img class="images" src="assets/images/city-640-480.jpg">
+                                <div class="overlay">
+                                    <div class="portfolio-text">City Navigator</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="list image" id="bike">
+                            <a class="container" href="#">
+                                <img class="images" src="assets/images/people-640-480.jpg">
+                                <div class="overlay">
+                                    <div class="portfolio-text">Quad-Rider App</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="list image" id="car">
+                            <a class="container"  href="#">
+                                <img class="images" src="assets/images/transport-640-480.jpg">
+                                <div class="overlay">
+                                    <div class="portfolio-text">Used Car Site</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="list image" id="food">
+                            <a class="container"  href="#">
+                                <img class="images" src="assets/images/food-640-480.jpg">
+                                <div class="overlay">
+                                    <div class="portfolio-text">Kevin's Kitchen Site</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="list image" id="business">
+                            <a class="container"  href="#">
+                                <img class="images" src="assets/images/business-640-480.jpg">
+                                <div class="overlay">
+                                    <div class="portfolio-text">Meeting Sync App</div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
             </section>
         </section>
 
+
         <footer>
-            <div id="footer-bar">
-                <div id="copyright">Copyright ©</div>
+            <div class="footer-bar">
+                <div class="copyright">Copyright ©</div>
             </div>
         </footer>
     </body>

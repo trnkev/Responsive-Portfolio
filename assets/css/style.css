@@ -25,14 +25,16 @@ a:link, a:visited {
 header {
     background: #ffffff;
     border-style: solid none;
-    border-width: 1px;
+    border-width: 2px;
     border-color: #cccccc;
     margin: 20px auto;
     height: 80px;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
 }
 
 footer {
-    position: absolute;
     width: 100%;
     text-align: center;
 }
@@ -51,21 +53,25 @@ input:hover {
     padding: 0 20px;
 }
 
-#nav-bar {
+.nav-bar {
     right: 0;
     position: absolute;
 
 }
 
+.main-container {
+    min-height: calc(100vh - 58px);
+    padding-top: 100px;
+}
 
-#bio {
+.wrap {
     border-top-style: solid;
-    border-width: 1px;
+    border-width: 2px;
     border-color: #dddddd;
     margin: 20px;
 }
 
-#name {
+.name {
     float: left;
     background: #4aaaa5;
     height: 100%;
@@ -73,16 +79,13 @@ input:hover {
 
 }
 
-
-
-
-#content {
+.content {
     width: 960px;
     margin: auto;
     height: 100%;
 }
 
-#main-header {
+.main-header {
     /* background: #4aaaa5; */
     color: #ffffff;
     padding-left: 20px;
@@ -101,7 +104,7 @@ input:hover {
     }
 }
 
-#main-content {
+.main-content {
     clear: both;
     width: 960px;
     height: 400px;
@@ -112,7 +115,7 @@ input:hover {
     border-color: #dddddd;
 }
 
-#about {
+.about {
     margin: 40px 20px;
 
 }
@@ -125,12 +128,12 @@ input:hover {
     padding-top: 20px;
 }
 
-#footer-bar {
+.footer-bar {
     background: #777777;
     border-top: 10px solid #4aaaa5;
 }
 
-#copyright {
+.copyright {
     color: #ffffff;
     padding: 20px 0 10px;
 }
@@ -242,16 +245,17 @@ input:hover {
     padding-bottom: 5px;
 }
 
-.bottom-page {
-    bottom: 0;
+li a:hover {
+    color: #7764f0;
 }
 
+
 @media screen and (max-width: 980px) {
-    #content {
+    .content {
         width: 90%;
     }
 
-    #main-content {
+    .main-content {
         width: 90%;
     }
 
@@ -276,7 +280,6 @@ input:hover {
     #city, #car {
         padding-right: 0;
     }
-
 }
 
 
@@ -285,19 +288,24 @@ input:hover {
         margin: 0;
         background: #4aaaa5;
         border: none;
+        position: static;
     } 
 
-    #content {
+    .main-container {
+        padding-top: 0;
+    }
+
+    .content {
         width: 100%;
         height: 80px;
     }
 
-    #name {
+    .name {
         text-align: center;
         width: 100%;
     }
 
-    #main-header {
+    .main-header {
         padding: 0;
         animation-duration: .25s
     }
@@ -306,27 +314,27 @@ input:hover {
         padding-top: 80px;
     }
 
-    #nav-bar {
+    .nav-bar {
         position: static;
         text-align: center;
         padding: 15px 0;
         background: #ffffff;
         margin: 0;
-        border-style: solid none;
-        border-width: 1px;
+        border-bottom: solid;
+        border-width: 2px;
         border-color: #cccccc;
     }
 
-    #main-content {
+    .main-content {
         height: 100%;
     }
 
-    .portfolio-section, #main-content {
+    .portfolio-section, .main-content {
         margin: 60px auto 10px;
 
     }
 
-    #about {
+    .about {
         margin: 20px;
     }
 
@@ -338,10 +346,6 @@ input:hover {
         float: none;
     }
 
-    #index-footer {
-        position: static;
-    }
-
     .images {
         width: 100%;
     }
@@ -349,9 +353,4 @@ input:hover {
     .portfolio-section {
         height: 100%;
     }
-
-    header {
-        position: static;
-    }
-
 }
