@@ -37,6 +37,15 @@ footer {
     text-align: center;
 }
 
+input {
+    cursor: pointer;
+    transition: width .1s;
+}
+
+input:hover {
+    width: 30%;
+}
+
 .nav-item {
     display: inline;
     padding: 0 20px;
@@ -45,7 +54,9 @@ footer {
 #nav-bar {
     right: 0;
     position: absolute;
+
 }
+
 
 #bio {
     border-top-style: solid;
@@ -59,7 +70,11 @@ footer {
     background: #4aaaa5;
     height: 100%;
     width: 30%;
+
 }
+
+
+
 
 #content {
     width: 960px;
@@ -68,10 +83,23 @@ footer {
 }
 
 #main-header {
-    background: #4aaaa5;
+    /* background: #4aaaa5; */
     color: #ffffff;
     padding-left: 20px;
+    animation-duration: .5s;
+    animation-name: slide;
 } 
+
+@keyframes slide {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
 
 #main-content {
     clear: both;
@@ -193,6 +221,8 @@ footer {
     font-weight: bold;
 }
 
+
+
 .portfolio-section {
     clear: both;
     width: 960px;
@@ -269,6 +299,7 @@ footer {
 
     #main-header {
         padding: 0;
+        animation-duration: .25s
     }
 
     nav {
